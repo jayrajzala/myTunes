@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="userInput">
+        <!-- <div id="slider"></div> -->
+
+        <!-- <form id="slideAmount" action="javascript:handleClick()"> -->
+        <form id="slideAmount">
+          <label>Enter Keyword</label>
+          <!-- prettier-ignore -->
+          <input type="text" id="slideKeyword" name="Keyword" maxlength="30" placeholder="here" required>
+          <br />
+          <br />
+
+          <label>Enter number of slides in carousel</label>
+          <!-- prettier-ignore -->
+          <input type="number" id="slideCount" name="slideCount" placeholder="30" max="1000">
+          <label>(max:1000)</label>
+          <br>
+          <br>
+          <input type="submit" value="Submit" id="slideSubmit" style="font-size: 1rem" ></input>
+        </form>
+
+        <br />
+        <br />
+      </h1>
+    </div>
+    <button id="prev">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <button id="next">
+      <i class="fa fa-arrow-right"></i>
+    </button>
+    <!-- 
+    <label for="toggle" id="burger">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <span><form  action="javascript:altHandleClick()">
+      Try Again
+        <input type="number" min="2" max="30" placeholder="Slides" id="altSlideNumber"/>
+      </form>
+        <input type="submit" id="slideSubmit">
+        
+    </span> -->
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

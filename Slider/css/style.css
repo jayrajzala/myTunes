@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  /* top: 15vh;
+  left: 30vh; */
+
+
+}
+
+.slide{
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  align-items: center;
+}
+
+.slide.current{
+  opacity: 1;
+
+}
+
+.slide .content{
+  position: absolute;
+  bottom: 20vh;
+  /* width: 100vw; */
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+
+  /* width:400px; */
+  left: 50%;
+  /* margin-left: -200px; */
+  transform: translate(-50%, 0);
+  font-size: 0.7rem;
+}
+.slide .content h1{
+  margin: 0 auto;
+  background-color: rgba(50,50,50,0.6);
+  text-align: center;
+  transform: translate(-8px, 0);
+}
+.slide.current .content{
+  opacity: 1;
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button{
+  border:2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+@media screen and (max-width: 10cm)
+{
+  .slide .content h1{
+    width: 85vw;
+    /* margin-left: 20px; */
+    transform: translate(-10px, 0);
+  }
+
+
+}
+
+
+
+
